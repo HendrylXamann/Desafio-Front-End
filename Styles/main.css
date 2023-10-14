@@ -1,0 +1,226 @@
+
+body, input, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff; 
+    color: #fff;
+    cursor: pointer;
+}
+
+#h2DadosF {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto 0 ; 
+    text-align: left;
+    border-radius: 10px;
+    border-collapse: collapse; 
+    border: 2px solid #070707;
+    width: 70%;
+}
+@media (max-width: 768px) {
+    #h2DadosF, #tProdContainer, #attachmentsTable, .productTable, .productIcon {
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
+    /* Outras adaptações para telas menores */
+}
+
+#uploadFile {
+    background-color: #0da622fe;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+}
+
+#salvarF {
+    background-color: #0da622fe;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+}
+
+#tProdContainer {
+    border: 2px solid #070707; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 0 auto 0 auto; 
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#h2Produtos {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto 0 ; 
+    text-align: left;
+    border-radius: 10px;
+    border-collapse: collapse; 
+    border: 2px solid #070707;
+    width: 70%;
+}
+
+.productTable table {
+    border: 2px solid #070707 !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    margin: 10px auto 0 !important;
+    border-collapse: collapse !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+}
+
+.productTable th, .productTable td {
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+
+.productTable th {
+    text-align: center;
+     border-top: none;
+  
+}
+
+.productTable td {
+    text-align: center;
+   
+}
+
+#addProduto {
+    background-color: #0da622fe;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.fluig-style-guide {
+    border: 2px solid #070707; 
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 0 auto 0 auto; 
+    width: 70%; 
+}
+
+.deleteIcon {
+    width: 60px; 
+    height: 65px;
+    cursor: pointer; 
+    margin-right: 10px;
+    float: left;
+}
+
+.productIcon{
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+.btnAnexo{   
+    background-color: #0da622fe;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+}
+
+.form-group {
+    width: 50%;
+    float: left;
+}
+.input-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#attachmentsTable {
+    border: 2px solid #070707;
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 0 auto 0 auto;
+    margin-bottom: 10px;
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.attachment-image {
+    width: 60px;
+    height: 65px;
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+}
+
+#h2anexos {
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    border-radius: 10px;
+    border-collapse: collapse; 
+    border: 2px solid #070707;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#h2anexos¹ {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto 0 ;
+    text-align: left;
+    border-radius: 10px;
+    border-collapse: collapse; 
+    border: 2px solid #070707;
+    width: 70%;  
+}
+
+#MsgLoading {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
+
+

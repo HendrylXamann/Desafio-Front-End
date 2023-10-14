@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Desafio Front End</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div id="h1CadFP"><h1 class="text-center">Cadastro de Fornecedor/Produto</h1> </div>
+    <!-- Construção dessa, e apenas dessa, tabela dentro do arquivo html para que o arquivo não fique muito vazio -->
+    <div id="h2DadosF"><h2>Dados do Fornecedor</h2></div>
+    <div class="fluig-style-guide"> 
+        <div id="fornecedorForm">
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="razaoSocial">Razão Social:</label>
+                    <input type="text" id="razaoSocial" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="nomeFantasia">Nome Fantasia:</label>
+                    <input type="text" id="nomeFantasia" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="InscricaoEstadual">Inscrição Estadual:</label>
+                    <input type="text" id="InscricaoEstadual">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="CEP">CEP:</label>
+                    <input type="text" id="CEP" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="InscricaoMunicipal">Inscrição Municipal:</label>
+                    <input type="text" id="InscricaoMunicipal">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="Endereço">Endereço:</label>
+                    <input type="text" id="Endereço" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="Numero">Número:</label>
+                    <input type="text" id="Numero" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="Complemento">Complemento:</label>
+                    <input type="text" id="Complemento" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text" id="Bairro" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="Municipio">Município:</label>
+                    <input type="text" id="Municipio" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="Estado">Estado:</label>
+                    <input type="text" id="Estado" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="NpessoaContat">Nome da Pessoa de Contato:</label>
+                    <input type="text" id="NpessoaContat" required placeholder="Campo obrigatório">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="text" id="email" required placeholder="Campo obrigatório">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="h2Produtos"> <h2>Produtos</h2> </div>
+    <div id="tProdContainer">
+        <div id="tableProd"></div>
+        <div id="BtnAddProduto"> <button id="addProduto" class="button large scrolly">Adicionar Produto</button> </div>
+    </div>
+
+    <div id="h2anexos¹"> <h2>Anexos</h2></div>
+        <div id="h2anexos"><h2>Itens</h2>
+        <table id="attachmentsTable">
+            <tbody> <!-- Linhas de anexos serão adicionadas aqui dinamicamente --></tbody>
+        </table>
+        <div id="btnAnexo">
+            <input type="file" id="fileInput" style="display: none;">
+            <button id="uploadFile" onclick="openFileInput()">Incluir anexo</button>
+            </div>
+        </div>
+    <br>
+
+    <button id="salvarF">Salvar Fornecedor</button>
+
+    <div id="MsgLoading" style="display: none;"> <p>Fornecedor salvo, um arquivo Json será baixado. Enquanto aguarda que tal pensar em contratar o Hendryl?</p></div>
+
+    <script src="JavaScript/Scripts.js"></script>
+    
+</body>
+</html>
